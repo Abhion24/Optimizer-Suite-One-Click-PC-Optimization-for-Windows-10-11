@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abhion24.github.io/Optimizer-2.0-WebDevlopment/sitemap.xml
