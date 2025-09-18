@@ -2,18 +2,32 @@
 
 This is the official website for OptimizerSuite, a PC optimization software for Windows 10/11.
 
+## Live Demo
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=github)](https://abhion24.github.io/Optimizer-2.0-WebDevlopment/)
+
 ## Project Structure
 
 ```
 .
-├── index.html          # Main HTML file with React components
-├── styles.css          # Custom CSS styling
-├── analytics.js        # Basic analytics tracking
-├── Screenshot 2025-09-18 105322.png  # Software screenshot
-├── Screenshot 2025-09-18 105330.png  # Software screenshot
-├── Screenshot 2025-09-18 105336.png  # Software screenshot
-├── Screenshot 2025-09-18 105343.png  # Software screenshot
-└── README.md           # This file
+├── docs/                   # GitHub Pages deployment directory
+│   ├── index.html          # Main HTML file with React components
+│   ├── styles.css          # Custom CSS styling
+│   ├── analytics.js        # Basic analytics tracking
+│   ├── 404.html            # Custom 404 page
+│   ├── robots.txt          # Search engine robots file
+│   ├── sitemap.xml         # XML sitemap for SEO
+│   ├── .nojekyll           # Disable Jekyll processing
+│   ├── CNAME               # Custom domain configuration
+│   ├── favicon.svg         # Website favicon
+│   ├── favicon.png         # Website favicon
+│   ├── Screenshot*.png     # Software screenshots
+│   ├── README.md           # Documentation
+│   ├── README.txt          # Software information
+│   ├── LICENSE.txt         # License information
+│   └── Optimizer2.0Setup.exe # Software executable
+├── README.md               # This file
+└── LICENSE                 # Repository license
 ```
 
 ## Features
@@ -35,7 +49,15 @@ This is the official website for OptimizerSuite, a PC optimization software for 
   - Contact form with validation
 - Basic analytics tracking
 - WCAG 2.1 accessibility compliance
-- SEO optimization
+- SEO optimization with sitemap and robots.txt
+
+## Deployment
+
+This website is designed for deployment on GitHub Pages:
+
+1. The `docs/` directory contains all files needed for the website
+2. GitHub Pages is configured to serve from the `docs/` directory
+3. The site is accessible at: https://abhion24.github.io/Optimizer-2.0-WebDevlopment/
 
 ## Technical Requirements
 
@@ -45,16 +67,22 @@ This is the official website for OptimizerSuite, a PC optimization software for 
 - Responsive design for mobile and desktop
 - Fast load times with lazy-loaded images
 
-## How to View
+## How to View Locally
 
-Simply open `index.html` in any modern web browser.
+1. Clone this repository
+2. Navigate to the `docs/` directory
+3. Open `index.html` in any modern web browser
+
+## Deployment
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## Customization
 
 To customize the website:
 
-1. Modify content in the React components within `index.html`
-2. Update styles in `styles.css`
+1. Modify content in the React components within `docs/index.html`
+2. Update styles in `docs/styles.css`
 3. Replace screenshot images with actual software screenshots
 4. Update download link to point to the actual executable file
 
@@ -69,4 +97,8 @@ Data is stored in the browser's localStorage for demonstration purposes.
 
 ## Creator
 
-Designed and built by Abhi Khade
+Designed and built by [Abhi Khade](https://github.com/Abhion24)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
